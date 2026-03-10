@@ -126,3 +126,9 @@ This workflow is highly extensible and can be migrated to automated summarizatio
 ---
 
 If you want to productionize this pipeline, prioritize adding scheduling, observability, multi-account permissions/audit, and robust retry policies.
+
+## 6. Example: X-Pert Interpretation (Author's Own Paper)
+
+The post below is a real output example for my own paper, **X-Pert** (*Unified multimodal learning enables generalized cellular response prediction to diverse perturbations*), generated through this workflow. You are very welcome to check it out, and I would love to hear your thoughts.
+
+![X-Pert Example](./assets/examples/x-pert-xiaohongshu-example.png)

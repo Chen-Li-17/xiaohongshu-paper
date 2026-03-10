@@ -126,3 +126,9 @@ uv run paper-parse/scripts/parse_paper.py --pdf /path/to/paper.pdf --output-dir 
 ---
 
 如需将该流程产品化，建议优先补齐：任务编排（scheduler）、日志追踪（observability）、多账号权限与审计、失败重试策略。
+
+## 6. 示例：X-Pert 论文解读（作者本人）
+
+下面这条小红书解读内容，来自我自己的论文 **X-Pert**（*Unified multimodal learning enables generalized cellular response prediction to diverse perturbations*）在本流程中的生成示例。欢迎大家阅读了解，也欢迎交流反馈。
+
+![X-Pert 示例](./assets/examples/x-pert-xiaohongshu-example.png)
