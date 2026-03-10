@@ -103,7 +103,25 @@ I/O handoff rules:
 uv run paper-parse/scripts/parse_paper.py --pdf /path/to/paper.pdf --output-dir ./parsed
 ```
 
-## 4. Design Principles and Extensibility
+## 4. ClawHub Installation and Usage Example
+
+### 4.1 Install from ClawHub (Four Skills)
+```bash
+clawhub install paper-parse-figures
+clawhub install paper-card-analyzer
+clawhub install xhs-post-factory
+clawhub install xiaohongshu-operate
+```
+
+### 4.2 Prompt Example
+
+Use the following real prompt as-is (Chinese, preserved to avoid intent drift):
+
+`"/papers/X-Pert/X-Pert_manuscript.pdf有篇论文，你帮我解析一下，然后转成paper card，生成对应的小红书博文，再帮我发表到小红书平台"`
+
+![X-Pert Prompt Output](./assets/examples/x-pert-xiaohongshu-example.png)
+
+## 5. Design Principles and Extensibility
 
 This workflow is highly extensible and can be migrated to automated summarization and operation for multiple content types across multiple social platforms:
 
@@ -116,7 +134,7 @@ This workflow is highly extensible and can be migrated to automated summarizatio
 - Workflow expansion:
   - Use `paper-card` as a normalized intermediate layer for retrieval systems, knowledge bases, CMS pipelines, and A/B publishing systems.
 
-## 5. Reliability and Governance Recommendations
+## 6. Reliability and Governance Recommendations
 
 - Keep the full chain evidence-driven: every claim should be traceable to parsed text or structured fields.
 - Distinguish “author-reported findings” from “operator interpretation”.
@@ -127,7 +145,7 @@ This workflow is highly extensible and can be migrated to automated summarizatio
 
 If you want to productionize this pipeline, prioritize adding scheduling, observability, multi-account permissions/audit, and robust retry policies.
 
-## 6. Example: X-Pert Interpretation (Author's Own Paper)
+## 7. Example: X-Pert Interpretation (Author's Own Paper)
 
 The post below is a real output example for my own paper, **X-Pert** (*Unified multimodal learning enables generalized cellular response prediction to diverse perturbations*), generated through this workflow. You are very welcome to check it out, and I would love to hear your thoughts.
 

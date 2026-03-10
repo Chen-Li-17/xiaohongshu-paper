@@ -103,7 +103,23 @@ PDF
 uv run paper-parse/scripts/parse_paper.py --pdf /path/to/paper.pdf --output-dir ./parsed
 ```
 
-## 4. 设计原则与可扩展性
+## 4. ClawHub 安装与使用案例
+
+### 4.1 ClawHub 安装（四个 skill）
+```bash
+clawhub install paper-parse-figures
+clawhub install paper-card-analyzer
+clawhub install xhs-post-factory
+clawhub install xiaohongshu-operate
+```
+
+### 4.2 使用 Prompt 案例
+
+`"/papers/X-Pert/X-Pert_manuscript.pdf有篇论文，你帮我解析一下，然后转成paper card，生成对应的小红书博文，再帮我发表到小红书平台"`
+
+![X-Pert Prompt Output](./assets/examples/x-pert-xiaohongshu-example.png)
+
+## 5. 设计原则与可扩展性
 
 本流程具有高度扩展性，可迁移到“各种内容 × 各种社交平台”的自动总结与自动运营：
 
@@ -116,7 +132,7 @@ uv run paper-parse/scripts/parse_paper.py --pdf /path/to/paper.pdf --output-dir 
 - 工作流侧扩展：
   - 将 `paper-card` 作为中间标准层，可向检索系统、知识库、内容 CMS、A/B 发布系统对接。
 
-## 5. 可靠性与治理建议
+## 6. 可靠性与治理建议
 
 - 全链路坚持“证据驱动”：所有结论可追溯到解析文本或结构化字段。
 - 明确区分“作者结论”与“运营解读”。
@@ -127,7 +143,7 @@ uv run paper-parse/scripts/parse_paper.py --pdf /path/to/paper.pdf --output-dir 
 
 如需将该流程产品化，建议优先补齐：任务编排（scheduler）、日志追踪（observability）、多账号权限与审计、失败重试策略。
 
-## 6. 示例：X-Pert 论文解读（作者本人）
+## 7. 示例：X-Pert 论文解读（作者本人）
 
 下面这条小红书解读内容，来自我自己的论文 **X-Pert**（*Unified multimodal learning enables generalized cellular response prediction to diverse perturbations*）在本流程中的生成示例。欢迎大家阅读了解，也欢迎交流反馈。
 
