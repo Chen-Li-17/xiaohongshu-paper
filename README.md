@@ -119,8 +119,6 @@ Use the following real prompt as-is (Chinese, preserved to avoid intent drift):
 
 `"/papers/X-Pert/X-Pert_manuscript.pdf有篇论文，你帮我解析一下，然后转成paper card，生成对应的小红书博文，再帮我发表到小红书平台"`
 
-![X-Pert Prompt Output](./assets/examples/x-pert-xiaohongshu-example.png)
-
 ## 5. Design Principles and Extensibility
 
 This workflow is highly extensible and can be migrated to automated summarization and operation for multiple content types across multiple social platforms:

@@ -117,8 +117,6 @@ clawhub install xiaohongshu-operate
 
 `"/papers/X-Pert/X-Pert_manuscript.pdf有篇论文，你帮我解析一下，然后转成paper card，生成对应的小红书博文，再帮我发表到小红书平台"`
 
-![X-Pert Prompt Output](./assets/examples/x-pert-xiaohongshu-example.png)
-
 ## 5. 设计原则与可扩展性
 
 本流程具有高度扩展性，可迁移到“各种内容 × 各种社交平台”的自动总结与自动运营：
